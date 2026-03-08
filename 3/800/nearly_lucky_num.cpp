@@ -1,16 +1,14 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cin>>n;
-    bool isLucky = true;
-    while(n>0){
-        int dig = n % 10;
-        if(dig != 4 && dig != 7){
-            isLucky = false;
+    string s;cin>>s;
+    int c = 0;
+    for(int i = 0 ; i < s.size(); i++){
+        if(s[i] == '4' || s[i] == '7'){
+            c++;
         }
-        n = n/10;
     }
-    if(!isLucky) cout<< "NO";
-    else cout<<"YES";
+    if(c == 4 || c== 7) cout<<"YES";
+    else{ cout<<"NO"; }
+    return 0;
 }
