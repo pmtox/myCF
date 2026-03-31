@@ -8,11 +8,11 @@ int main(){
         while(t--){
             long long n; cin>>n;
             for(int i = 2 ; i < 30 ; i++){
-                int val = (1 << i) -1;
-                if(n % val ==0 ){
-                    cout<<n/val<<endl;
+                int simp = pow(2 , i) - 1;
+                if(n % simp == 0){
+                    cout<<n / simp<<endl;
                     break;
-                } 
+                }
             }
         }
     return 0;
