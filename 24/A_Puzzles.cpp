@@ -10,6 +10,11 @@ int main(){
     sort(arr.begin() , arr.end());
     long long bst = LLONG_MAX;
     for(int i = 0 ; i+n-1 < m; i++){
+
+        // THIS IS A WINDOW SIZE !!
+        // THIS i + n - 1 = window size and the window should be less than 'm' so thats
+        // why we keep it less than m
+        
         bst = min(bst , arr[i+n-1] - arr[i]);
     }
     cout<<bst<<endl;
