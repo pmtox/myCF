@@ -20,6 +20,9 @@ int main(){
             }
             ans = min(ans , k - arr[i] % k);
         }
+
+        // WE HAVE AN EDGE CASE OF 4 !! as 4 = 2 * 2;
+
         if(k == 4){
             if(evv >= 2){
                 ans = min(ans , 0LL);
