@@ -15,7 +15,7 @@ void solve(){
         }
         
         // CATCH
-        // we can order only values less then minii 
+        // we can order only values less than minii 
         // and if arr[i] >= minii it won't be ordered
 
         if(arr[i] >= minii){
